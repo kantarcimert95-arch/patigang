@@ -1,0 +1,519 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PatiGang | El Yapımı Kedi ve Köpek Yatakları</title>
+  <meta name="description" content="PatiGang: Simge'nin atölyesinde tek tek ölçülüp dikilen el yapımı kedi ve köpek yatakları. Trendyol ve Hepsiburada'da.">
+  <meta name="theme-color" content="#FFF7EC">
+  <meta name="robots" content="noindex, nofollow"> <!-- Taslak: Simge onaylayınca bu satırı sil -->
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="PatiGang | El Yapımı Kedi ve Köpek Yatakları">
+  <meta property="og:description" content="Her patinin kendine ait bir yuvası olmalı. Simge'nin atölyesinde sevgiyle dikilir.">
+  <meta property="og:locale" content="tr_TR">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=DM+Sans:opsz,wght@9..40,400..700&family=Fraunces:ital,opsz,wght@0,9..144,400..800;1,9..144,400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Tekrar kullanılan çizimler ve ikonlar -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="paw" viewBox="0 0 24 24">
+      <ellipse cx="12" cy="15.6" rx="5.2" ry="4.4"/>
+      <circle cx="5.6" cy="9.6" r="2.2"/><circle cx="9.6" cy="5.8" r="2.3"/>
+      <circle cx="14.4" cy="5.8" r="2.3"/><circle cx="18.4" cy="9.6" r="2.2"/>
+    </symbol>
+
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-bag" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5.5 8h13l-1.2 12.2H6.7z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></g></symbol>
+    <symbol id="i-insta" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></g></symbol>
+    <symbol id="i-ruler" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="8" width="19" height="8" rx="1.6"/><path d="M6.5 8v3M10.5 8v4M14.5 8v3M18 8v4"/></g></symbol>
+    <symbol id="i-scissors" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.1 15.9M14.5 14.5 20 20M8.1 8.1 12 12"/></g></symbol>
+    <symbol id="i-thread" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20 17 7"/><ellipse cx="18.4" cy="5.6" rx="1.4" ry="2.2" transform="rotate(45 18.4 5.6)"/><path d="M19.5 4.5c3 2.5-1 6-4.5 6.5S8 13 9.5 17"/></g></symbol>
+    <symbol id="i-box" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8 12 3 3 8v8l9 5 9-5z"/><path d="m3 8 9 5 9-5M12 13v8"/></g></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-7.5-4.6-7.5-10.2A4.3 4.3 0 0 1 12 7.3a4.3 4.3 0 0 1 7.5 2.5C19.5 15.4 12 20 12 20z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M20.5 11.6a8.3 8.3 0 0 1-12.1 7.4L3.5 20.5l1.5-4.6a8.3 8.3 0 1 1 15.5-4.3z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 3.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m4 7 8 6 8-6"/></g></symbol>
+
+    <!-- Ürün çizimleri: gerçek fotoğraflar gelince <img> ile değiştirilecek -->
+    <symbol id="ill-simit" viewBox="0 0 240 180">
+      <ellipse cx="120" cy="152" rx="96" ry="11" fill="#33241C" opacity=".08"/>
+      <ellipse cx="120" cy="128" rx="94" ry="37" fill="#D9694C"/>
+      <ellipse cx="120" cy="110" rx="94" ry="37" fill="#EE8466"/>
+      <ellipse cx="120" cy="107" rx="61" ry="21" fill="#D9694C"/>
+      <ellipse cx="120" cy="114" rx="56" ry="15" fill="#FFF1E4"/>
+      <path d="M26 110a94 37 0 0 0 188 0l-33-3a61 21 0 0 1-122 0z" fill="#EE8466"/>
+      <path d="M42 113a78 30 0 0 0 156 0" fill="none" stroke="#FFF7EC" stroke-width="2.2" stroke-dasharray="6 6" stroke-linecap="round" opacity=".85"/>
+      <ellipse cx="96" cy="88" rx="30" ry="6" fill="#FFF7EC" opacity=".22"/>
+    </symbol>
+
+    <symbol id="ill-minder" viewBox="0 0 240 180">
+      <ellipse cx="120" cy="152" rx="94" ry="10" fill="#33241C" opacity=".08"/>
+      <rect x="30" y="84" width="180" height="62" rx="28" fill="#6F9A78"/>
+      <rect x="30" y="70" width="180" height="60" rx="28" fill="#9DBFA2"/>
+      <rect x="44" y="82" width="152" height="36" rx="16" fill="none" stroke="#FFF7EC" stroke-width="2.2" stroke-dasharray="6 6" stroke-linecap="round" opacity=".9"/>
+      <circle cx="84" cy="100" r="3.6" fill="#6F9A78"/><circle cx="120" cy="100" r="3.6" fill="#6F9A78"/><circle cx="156" cy="100" r="3.6" fill="#6F9A78"/>
+      <g transform="translate(176 136) rotate(-14)">
+        <rect x="-15" y="-4" width="30" height="8" rx="4" fill="#F2C46B"/>
+        <circle cx="-15" cy="-4" r="5" fill="#F2C46B"/><circle cx="-15" cy="4" r="5" fill="#F2C46B"/>
+        <circle cx="15" cy="-4" r="5" fill="#F2C46B"/><circle cx="15" cy="4" r="5" fill="#F2C46B"/>
+      </g>
+    </symbol>
+
+    <symbol id="ill-kenarli" viewBox="0 0 240 180">
+      <ellipse cx="120" cy="154" rx="96" ry="10" fill="#33241C" opacity=".08"/>
+      <rect x="34" y="52" width="172" height="74" rx="26" fill="#6F8FB0"/>
+      <rect x="52" y="82" width="136" height="44" rx="16" fill="#FFF6EA"/>
+      <rect x="28" y="110" width="184" height="38" rx="19" fill="#8FB0CF"/>
+      <path d="M48 129h144" stroke="#FFF7EC" stroke-width="2.2" stroke-dasharray="6 6" stroke-linecap="round" opacity=".9"/>
+      <path d="M52 68h136" stroke="#FFF7EC" stroke-width="2.2" stroke-dasharray="6 6" stroke-linecap="round" opacity=".55"/>
+      <use href="#paw" x="108" y="90" width="24" height="24" fill="#E8D9C6"/>
+    </symbol>
+
+    <symbol id="ill-battaniye" viewBox="0 0 240 180">
+      <ellipse cx="120" cy="150" rx="88" ry="9" fill="#33241C" opacity=".08"/>
+      <rect x="44" y="112" width="152" height="32" rx="11" fill="#F2C46B"/>
+      <path d="M56 128h128" stroke="#FFF7EC" stroke-width="2" stroke-dasharray="5 5" stroke-linecap="round"/>
+      <rect x="54" y="86" width="132" height="30" rx="11" fill="#EE8466"/>
+      <path d="M66 101h108" stroke="#FFF7EC" stroke-width="2" stroke-dasharray="5 5" stroke-linecap="round"/>
+      <rect x="64" y="60" width="112" height="30" rx="11" fill="#9DBFA2"/>
+      <use href="#paw" x="80" y="66" width="16" height="16" fill="#FFF7EC" opacity=".85"/>
+      <use href="#paw" x="112" y="66" width="16" height="16" fill="#FFF7EC" opacity=".85"/>
+      <use href="#paw" x="144" y="66" width="16" height="16" fill="#FFF7EC" opacity=".85"/>
+    </symbol>
+  </defs>
+</svg>
+
+<a class="skip" href="#icerik">İçeriğe geç</a>
+
+<header class="site-header" id="ust">
+  <div class="wrap header-inner">
+    <a class="logo" href="#ust" aria-label="PatiGang ana sayfa">
+      <span class="logo-mark"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#paw"/></svg></span>
+      <span class="logo-word">Pati<b>Gang</b></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Ana menü">
+      <a href="#koleksiyon">Koleksiyon</a>
+      <a href="#olcu">Ölçü rehberi</a>
+      <a href="#hikaye">Hikâyemiz</a>
+      <a href="#atolye">Nasıl dikiyoruz</a>
+      <a href="#sss">SSS</a>
+      <a class="btn btn-sm btn-primary nav-cta" href="#satin-al"><svg class="ic" aria-hidden="true"><use href="#i-bag"/></svg>Satın al</a>
+    </nav>
+    <button class="menu-btn" aria-controls="nav" aria-expanded="false" aria-label="Menüyü aç">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="icerik">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="stitch-under">El yapımı evcil hayvan yatakları</span></p>
+        <h1>Her patinin <em>kendine ait</em> bir yuvası olmalı.</h1>
+        <p class="lead">PatiGang'de her yatak Simge'nin atölyesinde tek tek ölçülür, kesilir ve dikilir. Kedin ya da köpeğin kıvrılıp mışıl mışıl uyusun diye.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" data-link="trendyol"><svg class="ic" aria-hidden="true"><use href="#i-bag"/></svg>Trendyol'da incele</a>
+          <a class="btn btn-ghost" data-link="hepsiburada"><svg class="ic" aria-hidden="true"><use href="#i-bag"/></svg>Hepsiburada'da incele</a>
+        </div>
+        <a class="insta-link" data-link="instagram"><svg class="ic" aria-hidden="true"><use href="#i-insta"/></svg>Instagram'da takip et <span data-text="instagramHandle">@patigang</span></a>
+      </div>
+
+      <div class="hero-art reveal">
+        <svg class="hero-svg" viewBox="0 0 560 460" role="img" aria-labelledby="heroArtTitle">
+          <title id="heroArtTitle">Simit yatağında kıvrılıp uyuyan turuncu bir kedi çizimi</title>
+          <g class="contours" fill="none" stroke="#33241C" stroke-opacity=".10" stroke-width="1.4"><path d="M333 192C333 194 333 196 332 197C332 199 331 201 331 202C330 204 329 205 327 207C326 208 324 209 322 210C320 211 318 212 316 212C313 213 311 213 309 214C307 214 304 215 302 215C299 215 296 216 294 215C291 215 288 214 286 213C284 212 282 210 281 209C279 207 279 205 278 203C278 201 278 199 278 197C278 196 278 194 278 192C279 191 279 189 280 188C281 186 282 185 283 184C284 182 285 181 286 179C287 178 288 176 289 175C290 173 292 171 294 170C296 169 299 168 301 167C304 167 307 167 310 167C312 168 315 169 317 170C319 171 321 173 323 174C324 175 326 176 327 178C329 179 330 181 331 182C332 184 333 186 333 187C334 189 333 191 333 192Z"/><path d="M365 190C365 194 364 197 364 201C363 205 362 209 361 213C359 217 357 221 354 224C351 227 347 230 342 232C337 235 332 236 326 237C321 238 316 239 311 240C305 241 300 242 294 243C288 243 281 244 275 244C269 243 262 241 257 238C252 236 248 232 245 227C243 223 241 218 240 214C239 210 240 206 240 202C240 198 240 194 241 190C242 186 243 183 245 180C246 176 249 173 251 170C253 167 255 164 257 161C260 157 261 153 264 150C267 146 271 141 276 138C280 135 286 131 293 130C299 129 306 129 312 131C318 132 324 135 329 138C334 141 338 144 342 148C346 151 350 154 353 157C356 160 359 164 361 167C363 171 364 175 365 179C366 182 365 186 365 190Z"/><path d="M394 188C394 194 394 199 393 205C392 211 393 217 391 224C389 230 386 237 381 242C376 248 369 252 362 256C354 259 345 261 337 263C328 265 320 265 311 267C303 268 294 270 285 271C275 272 265 273 255 272C246 270 235 268 228 263C220 259 214 252 210 246C205 239 204 232 203 225C201 218 201 212 201 205C202 199 202 193 203 188C204 182 206 177 209 172C211 166 215 162 218 157C221 152 225 147 228 142C231 136 234 130 238 124C243 117 248 110 255 104C263 99 273 93 282 91C292 89 304 90 314 92C324 95 333 100 341 105C348 110 354 116 360 122C366 127 371 132 375 137C380 143 384 148 387 153C390 159 392 165 393 170C394 176 394 182 394 188Z"/><path d="M422 186C422 194 422 201 423 210C423 218 424 227 422 236C420 244 417 255 411 262C405 270 395 277 384 282C374 287 360 289 349 291C337 293 325 293 313 295C301 296 289 298 276 299C264 300 250 302 237 300C224 298 210 294 200 288C190 282 181 273 176 264C170 256 169 245 167 236C165 227 165 218 165 210C165 202 165 194 167 186C168 179 170 171 174 164C177 157 182 151 186 144C191 137 195 131 199 124C204 116 207 107 213 98C219 89 225 78 235 70C245 62 259 55 273 52C286 49 303 50 317 54C330 57 343 66 353 73C364 80 371 89 379 97C386 105 392 112 398 119C403 126 409 133 413 141C416 148 419 156 420 163C422 171 421 179 422 186Z"/><path d="M450 186C451 196 453 205 454 215C455 226 459 238 457 249C456 261 453 275 445 285C438 295 424 305 411 311C397 317 379 319 364 322C348 324 332 324 317 325C301 326 287 328 271 329C255 329 237 331 221 328C205 326 188 321 175 313C163 306 153 294 146 283C139 272 137 259 135 248C133 237 132 226 132 216C132 205 131 196 133 186C134 177 137 167 140 158C144 149 151 141 156 133C161 124 167 116 172 106C178 97 181 85 189 73C196 62 204 46 217 36C230 26 248 16 265 12C283 9 305 11 322 16C339 21 355 32 368 42C381 51 390 64 399 74C407 84 414 94 421 103C427 112 434 121 438 130C442 139 445 149 447 158C449 168 449 177 450 186Z"/><path d="M480 187C482 199 486 209 489 222C492 235 498 251 497 265C497 280 494 298 485 311C476 324 459 336 442 344C425 351 402 353 382 356C363 358 343 356 324 356C305 357 287 358 268 358C249 358 228 360 209 357C190 353 170 347 155 338C140 329 129 315 121 302C113 289 110 274 107 260C104 247 104 235 102 222C101 210 99 199 100 187C102 176 104 164 109 153C113 142 121 132 127 122C134 111 141 102 147 90C154 78 158 64 167 49C176 35 186 16 201 3C217 -10 239 -23 261 -27C282 -31 309 -28 330 -22C351 -15 371 -0 386 12C401 25 411 41 421 54C430 67 438 78 445 90C452 101 459 111 464 122C469 133 472 144 474 155C477 166 477 176 480 187Z"/><path d="M510 189C514 202 521 215 526 231C531 246 540 265 541 283C542 301 540 324 530 340C519 356 499 371 478 380C457 389 428 391 404 392C380 394 355 390 333 389C310 389 289 389 267 388C245 387 221 388 200 384C178 380 155 373 138 362C122 351 109 335 100 320C91 305 88 288 84 273C79 258 77 244 75 230C72 216 69 203 69 189C69 176 71 162 76 149C81 136 91 124 99 111C106 99 115 88 123 74C131 59 136 42 146 25C157 8 169 -15 187 -30C206 -45 232 -61 258 -66C283 -70 316 -66 340 -58C365 -50 388 -31 405 -15C422 0 433 20 443 35C454 51 462 65 469 78C477 92 484 103 490 116C495 128 499 140 502 152C505 165 506 176 510 189Z"/></g>
+          <path d="M120 120c40-70 170-92 262-58 96 36 150 118 120 210-28 88-140 128-250 116-104-12-176-70-176-150 0-42 18-80 44-118z" fill="#F7D488" opacity=".55"/>
+
+          <ellipse cx="280" cy="392" rx="205" ry="24" fill="#33241C" opacity=".08"/>
+          <ellipse cx="280" cy="336" rx="198" ry="74" fill="#6F9A78"/>
+          <ellipse cx="280" cy="306" rx="198" ry="74" fill="#9DBFA2"/>
+          <ellipse cx="280" cy="300" rx="132" ry="42" fill="#7FA886"/>
+          <ellipse cx="280" cy="312" rx="122" ry="31" fill="#FFF1E4"/>
+
+          <g class="cat">
+            <path d="M380 282c34 18 18 50-30 52-40 2-92 2-128-4" fill="none" stroke="#E98A4E" stroke-width="22" stroke-linecap="round"/>
+            <ellipse cx="290" cy="276" rx="94" ry="45" fill="#E98A4E"/>
+            <path d="M266 236c10 14 10 30 0 44M300 233c11 15 11 32 0 47M334 238c9 13 9 28 0 40" fill="none" stroke="#C96A33" stroke-width="7" stroke-linecap="round"/>
+            <circle cx="216" cy="272" r="38" fill="#E98A4E"/>
+            <path d="M190 252 192 216l26 24zM222 238l24-24 6 38z" fill="#E98A4E" stroke="#E98A4E" stroke-width="4" stroke-linejoin="round"/>
+            <path d="M195 245 196 226l12 12zM229 237l12-12 3 18z" fill="#F6B8A6"/>
+            <ellipse cx="216" cy="288" rx="20" ry="13" fill="#FFF1E4"/>
+            <path d="M196 272q7 6 14 0M222 272q7 6 14 0" fill="none" stroke="#33241C" stroke-width="3" stroke-linecap="round"/>
+            <path d="M212 282h8l-4 5z" fill="#D9694C" stroke="#D9694C" stroke-width="2" stroke-linejoin="round"/>
+            <path d="M188 284l-18-2M188 290l-17 4M244 284l18-2M244 290l17 4" stroke="#33241C" stroke-opacity=".45" stroke-width="1.6" stroke-linecap="round"/>
+          </g>
+
+          <path d="M82 306a198 74 0 0 0 396 0l-66-6a132 42 0 0 1-264 0z" fill="#9DBFA2"/>
+          <path d="M110 310a170 60 0 0 0 340 0" fill="none" stroke="#FFF7EC" stroke-width="3" stroke-dasharray="9 8" stroke-linecap="round" opacity=".9" class="stitch-draw"/>
+          <ellipse cx="200" cy="258" rx="50" ry="8" fill="#FFF7EC" opacity=".18"/>
+
+          <g class="zzz" fill="#33241C" font-family="Fraunces, Georgia, serif" font-style="italic" font-weight="600">
+            <text x="150" y="196" font-size="30">z</text>
+            <text x="124" y="160" font-size="24" opacity=".7">z</text>
+            <text x="104" y="130" font-size="18" opacity=".45">z</text>
+          </g>
+          <g fill="#C8502F" opacity=".85">
+            <use href="#paw" x="452" y="96" width="34" height="34" transform="rotate(18 469 113)"/>
+            <use href="#paw" x="486" y="150" width="26" height="26" transform="rotate(28 499 163)" opacity=".6"/>
+          </g>
+        </svg>
+        <p class="hand-note">mışıl mışıl&hellip;</p>
+      </div>
+    </div>
+
+    <ul class="hero-badges wrap" aria-label="Öne çıkanlar">
+      <li><svg class="ic" aria-hidden="true"><use href="#i-scissors"/></svg>Tek tek kesilir</li>
+      <li><svg class="ic" aria-hidden="true"><use href="#i-ruler"/></svg>Mühendis titizliğiyle ölçülür</li>
+      <li><svg class="ic" aria-hidden="true"><use href="#i-heart"/></svg>Sevgiyle dikilir</li>
+    </ul>
+  </section>
+
+  <!-- KAYAN BANT -->
+  <div class="ribbon-wrap" aria-hidden="true">
+  <div class="ribbon">
+    <div class="ribbon-track">
+      <span>El yapımı</span><svg><use href="#paw"/></svg><span>Kediler için</span><svg><use href="#paw"/></svg><span>Köpekler için</span><svg><use href="#paw"/></svg><span>Türkiye'de dikildi</span><svg><use href="#paw"/></svg><span>Trendyol</span><svg><use href="#paw"/></svg><span>Hepsiburada</span><svg><use href="#paw"/></svg>
+      <span>El yapımı</span><svg><use href="#paw"/></svg><span>Kediler için</span><svg><use href="#paw"/></svg><span>Köpekler için</span><svg><use href="#paw"/></svg><span>Türkiye'de dikildi</span><svg><use href="#paw"/></svg><span>Trendyol</span><svg><use href="#paw"/></svg><span>Hepsiburada</span><svg><use href="#paw"/></svg>
+    </div>
+  </div>
+  </div>
+
+  <!-- KOLEKSİYON -->
+  <section class="section" id="koleksiyon">
+    <div class="wrap">
+      <header class="section-head reveal">
+        <p class="eyebrow">Koleksiyon</p>
+        <h2>Patiler için dikildi.</h2>
+        <p>Kıvrılarak uyuyanlara da, boylu boyunca uzananlara da bir yuva var. Renk ve ölçü seçeneklerini mağaza sayfalarında bulabilirsin.</p>
+      </header>
+
+      <div class="cards">
+        <article class="card reveal" style="--tint:#FBE1D8">
+          <div class="card-media"><svg viewBox="0 0 240 180" role="img" aria-label="Yuvarlak simit yatak çizimi"><use href="#ill-simit"/></svg></div>
+          <div class="card-body">
+            <h3>Simit Yatak</h3>
+            <p>Yuvarlak, yumuşak kenarlı. Kıvrılıp başını kenara yaslamayı seven kediler ve küçük dostlar için.</p>
+            <div class="card-links">
+              <a data-link="trendyol">Trendyol <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              <a data-link="hepsiburada">Hepsiburada <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card reveal" style="--tint:#E4EFE3">
+          <div class="card-media"><svg viewBox="0 0 240 180" role="img" aria-label="Dikdörtgen minder yatak çizimi"><use href="#ill-minder"/></svg></div>
+          <div class="card-body">
+            <h3>Minder Yatak</h3>
+            <p>Düz ve geniş. Boylu boyunca uzanıp esneyenler, kanepeden kendine yer arayanlar için.</p>
+            <div class="card-links">
+              <a data-link="trendyol">Trendyol <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              <a data-link="hepsiburada">Hepsiburada <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card reveal" style="--tint:#E2ECF4">
+          <div class="card-media"><svg viewBox="0 0 240 180" role="img" aria-label="Kenarlı sepet yatak çizimi"><use href="#ill-kenarli"/></svg></div>
+          <div class="card-body">
+            <h3>Kenarlı Yatak</h3>
+            <p>Dört tarafı korunaklı. Sırtını bir yere dayamadan uyuyamayan, güvende hissetmek isteyenler için.</p>
+            <div class="card-links">
+              <a data-link="trendyol">Trendyol <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              <a data-link="hepsiburada">Hepsiburada <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card reveal" style="--tint:#FBEFD2">
+          <div class="card-media"><svg viewBox="0 0 240 180" role="img" aria-label="Katlanmış battaniyeler çizimi"><use href="#ill-battaniye"/></svg></div>
+          <div class="card-body">
+            <h3>Battaniye &amp; Örtü</h3>
+            <p>Kanepeyi tüyden korur, yolculukta tanıdık bir koku taşır. Yatağın en iyi arkadaşı.</p>
+            <div class="card-links">
+              <a data-link="trendyol">Trendyol <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              <a data-link="hepsiburada">Hepsiburada <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ÖLÇÜ REHBERİ -->
+  <section class="section section-tint" id="olcu">
+    <div class="wrap size-grid">
+      <div class="size-copy reveal">
+        <p class="eyebrow">Ölçü rehberi</p>
+        <h2>Hangi boy dostuna uyar?</h2>
+        <p>Bir harita mühendisinin markasında ölçüsüz iş olmaz. Dostun uyurken burnunun ucundan kuyruğunun dibine kadar ölç; gerisini birlikte hesaplayalım.</p>
+        <ol class="size-steps">
+          <li><b>1</b>Uyurken ya da uzanmışken ölç.</li>
+          <li><b>2</b>Burun ucundan kuyruk dibine kadar.</li>
+          <li><b>3</b>Nasıl uyuduğunu seç, önerini gör.</li>
+        </ol>
+      </div>
+
+      <form class="size-tool reveal" id="sizeTool" onsubmit="return false" aria-labelledby="sizeToolTitle">
+        <h3 id="sizeToolTitle">Yatak bulucu</h3>
+
+        <label class="field">
+          <span>Dostunun adı <small>(isteğe bağlı)</small></span>
+          <input type="text" id="petName" maxlength="20" placeholder="ör. Pamuk" autocomplete="off">
+        </label>
+
+        <fieldset class="field">
+          <legend>Nasıl uyur?</legend>
+          <div class="seg">
+            <label><input type="radio" name="style" value="kivrilarak" checked><span>Kıvrılarak</span></label>
+            <label><input type="radio" name="style" value="uzanarak"><span>Uzanarak</span></label>
+          </div>
+        </fieldset>
+
+        <label class="field">
+          <span>Boyu (burun → kuyruk dibi): <output id="lenOut" for="petLen">45 cm</output></span>
+          <input type="range" id="petLen" min="20" max="120" step="1" value="45">
+        </label>
+
+        <div class="size-result" aria-live="polite">
+          <p class="size-label"><span id="resName">Dostun</span> için önerimiz</p>
+          <p class="size-num"><span id="resCm">55</span><small>cm</small></p>
+          <p class="size-desc">en az bu iç ölçüye sahip bir <b id="resType">Simit Yatak</b></p>
+          <p class="size-fine">Genel bir öneridir. Ürün sayfasındaki ölçülerle karşılaştır; ikisinin arasında kalırsan bir büyüğünü seç.</p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- HİKÂYE -->
+  <section class="story" id="hikaye">
+    <svg class="story-contours" viewBox="0 0 1200 760" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <g fill="none" stroke="#FFF7EC" stroke-opacity=".09" stroke-width="1.4"><path d="M296 226C295 228 295 230 295 232C295 234 295 236 294 237C293 239 292 241 290 243C289 245 286 246 284 248C281 249 278 250 276 251C273 251 270 252 267 252C263 253 260 253 257 252C254 252 251 251 248 250C246 248 244 247 242 245C241 243 240 241 239 240C238 238 237 237 236 235C235 234 233 233 231 231C230 230 228 228 227 226C226 224 225 222 225 220C225 218 226 216 227 214C228 212 230 210 232 209C234 207 236 205 239 204C241 203 245 202 248 202C251 201 254 201 257 202C260 202 263 203 266 204C269 204 271 205 273 206C276 207 278 207 281 208C283 209 286 210 288 211C290 212 292 214 293 215C295 217 295 219 295 221C296 223 296 224 296 226Z"/><path d="M347 228C347 233 347 237 346 242C345 247 345 252 342 257C340 262 337 268 333 272C328 276 322 280 315 283C309 286 301 289 294 291C286 293 278 294 270 295C262 296 253 296 245 295C238 294 229 292 223 288C217 285 212 280 208 276C204 271 203 266 200 262C197 258 195 254 192 251C188 247 183 244 179 241C175 237 169 233 166 228C163 223 161 217 161 212C161 206 163 201 166 196C169 190 173 185 178 181C184 176 190 172 197 169C204 166 212 164 221 163C229 162 238 162 246 164C254 165 261 168 268 170C275 172 281 175 287 177C293 179 299 180 305 182C312 184 319 185 325 188C330 191 336 195 340 199C343 203 345 208 346 213C347 218 347 223 347 228Z"/><path d="M402 230C402 238 401 246 400 254C399 262 398 271 394 279C390 287 385 296 377 302C369 309 359 315 348 320C337 325 324 328 312 331C300 334 287 336 274 338C261 339 247 340 235 338C223 336 209 332 199 327C189 322 182 314 175 306C169 299 167 291 163 284C159 278 156 272 150 267C144 261 136 257 129 251C121 245 111 238 106 230C100 222 96 213 96 204C95 195 98 185 103 177C108 168 115 160 124 153C133 146 143 139 155 134C167 129 181 125 194 124C208 123 223 125 236 127C249 130 261 135 271 139C282 143 290 148 300 151C309 154 319 156 329 158C339 161 351 163 361 167C371 171 381 177 387 184C394 190 397 198 400 206C402 214 402 222 402 230Z"/><path d="M462 232C463 244 462 255 460 266C459 278 457 290 451 301C445 312 437 324 425 333C414 342 398 350 382 356C367 362 349 366 332 370C315 373 298 377 281 378C263 380 244 381 227 379C210 377 192 372 178 365C165 358 154 347 146 337C138 327 135 315 129 306C123 297 119 290 111 282C103 275 91 269 80 261C69 253 55 243 46 232C38 221 32 208 31 196C30 183 34 170 41 158C47 146 58 134 70 124C83 114 98 104 115 97C131 91 151 86 170 85C189 84 211 88 229 92C246 96 262 105 276 111C290 117 301 123 314 128C326 132 339 133 353 137C368 140 385 141 399 147C414 152 429 159 439 168C449 176 455 188 459 199C462 209 462 221 462 232Z"/><path d="M530 234C531 248 530 263 527 278C524 293 522 309 513 324C505 338 492 352 476 364C461 375 439 383 419 390C398 397 376 401 354 405C333 410 311 414 290 416C268 418 244 421 223 418C201 416 178 411 161 402C143 393 130 379 119 366C109 354 105 339 98 327C91 316 85 307 75 297C64 288 47 281 33 270C18 260 -1 248 -12 234C-23 220 -32 202 -34 186C-35 170 -29 152 -20 137C-12 121 2 106 18 93C35 80 54 68 76 60C98 52 125 46 149 45C174 45 202 50 224 57C247 63 266 76 284 84C301 92 313 101 329 107C345 112 360 113 378 116C397 119 420 120 439 126C459 131 480 140 494 151C508 161 517 176 523 190C529 204 529 219 530 234Z"/><path d="M604 234C605 252 604 271 600 290C596 308 591 328 579 346C568 363 550 380 530 393C509 406 481 415 455 422C430 430 402 433 376 437C350 442 325 446 300 449C274 452 246 456 220 454C195 452 166 446 145 436C124 427 107 409 94 395C81 380 77 362 68 348C58 334 52 323 38 312C25 300 4 292 -15 279C-33 266 -58 251 -72 234C-86 217 -97 195 -98 175C-100 155 -92 133 -81 114C-70 95 -52 77 -32 61C-12 45 13 30 40 21C67 11 100 5 130 5C160 5 195 13 222 22C249 31 272 48 292 59C313 69 326 81 344 87C363 93 381 93 403 96C426 99 456 98 481 104C506 110 534 119 553 131C572 144 585 162 593 179C602 196 603 215 604 234Z"/><path d="M682 233C684 255 682 278 676 300C671 323 663 347 648 367C632 387 609 407 582 421C556 435 521 443 490 451C459 458 426 460 396 464C366 469 338 474 309 477C279 481 248 487 218 486C188 484 155 480 130 469C105 459 84 439 68 422C52 405 47 384 35 368C24 352 16 339 -1 325C-18 312 -43 302 -65 287C-88 271 -118 253 -134 233C-151 212 -163 186 -165 162C-166 139 -156 113 -142 90C-129 68 -107 46 -83 28C-58 10 -29 -8 3 -19C36 -30 75 -37 111 -36C147 -35 188 -24 219 -12C251 -1 277 21 300 34C323 48 337 61 358 68C379 75 399 73 427 75C454 77 491 74 522 80C554 86 590 96 614 110C639 124 656 146 668 166C679 187 681 210 682 233Z"/><path d="M764 231C766 257 763 285 755 311C747 337 736 365 716 388C695 411 665 432 632 447C600 462 557 469 520 476C483 482 446 482 412 486C377 491 348 496 315 501C282 505 248 514 214 514C180 514 142 511 112 501C83 490 57 469 39 450C20 432 12 407 -2 389C-16 370 -26 355 -46 340C-66 324 -96 312 -122 294C-148 276 -183 255 -202 231C-220 206 -234 176 -234 148C-235 121 -222 91 -205 66C-188 40 -163 15 -134 -6C-105 -26 -71 -47 -34 -59C4 -71 50 -79 91 -77C133 -75 180 -61 216 -46C251 -32 280 -5 306 11C331 27 345 43 369 50C392 58 415 54 448 55C480 56 525 50 563 55C601 61 647 71 677 87C707 103 730 128 745 152C759 176 762 204 764 231Z"/><path d="M848 228C850 259 845 292 835 322C824 352 808 384 782 409C756 434 718 458 678 472C639 487 587 493 544 498C502 503 460 500 422 504C384 508 354 513 318 519C282 526 246 538 208 541C170 543 126 542 92 532C58 522 27 500 5 480C-18 460 -28 432 -45 411C-62 391 -75 373 -98 355C-121 337 -156 323 -185 302C-215 281 -254 256 -274 228C-294 200 -308 165 -307 134C-306 103 -289 70 -269 41C-249 13 -218 -15 -186 -38C-153 -61 -114 -84 -72 -97C-29 -110 22 -119 69 -116C116 -113 169 -96 209 -79C249 -61 281 -30 309 -11C336 7 350 26 376 33C402 41 428 35 465 35C503 34 556 25 602 29C647 34 703 44 740 62C777 80 806 109 824 136C842 164 846 197 848 228Z"/><path d="M1008 524C1009 526 1009 528 1009 530C1009 532 1008 534 1007 536C1005 537 1004 539 1002 541C1000 542 998 544 996 545C994 546 991 547 989 548C986 548 984 549 981 549C979 548 976 548 974 547C971 547 969 546 967 545C964 545 962 544 960 543C958 542 956 541 954 539C953 538 951 536 951 535C950 533 950 531 950 529C950 527 950 526 950 524C950 522 950 520 950 519C950 517 950 515 950 513C951 511 951 509 952 507C954 505 956 503 958 502C960 500 962 499 965 499C968 498 970 498 973 498C976 497 979 498 981 498C984 499 986 500 988 501C990 502 992 504 993 506C995 507 996 509 997 511C998 512 998 513 1000 515C1001 516 1003 517 1004 519C1005 520 1007 522 1008 524Z"/><path d="M1067 524C1070 529 1072 535 1071 541C1071 547 1068 553 1065 558C1062 563 1056 568 1051 572C1046 576 1040 580 1034 583C1028 586 1021 589 1014 591C1007 592 999 593 992 592C985 592 978 590 971 588C965 587 959 584 953 582C947 580 941 578 935 576C929 573 923 571 918 567C914 563 909 559 907 554C905 549 904 544 904 539C904 534 905 529 905 524C906 519 906 515 906 509C906 504 905 499 906 493C907 488 908 481 911 476C915 471 920 466 926 462C932 458 940 455 947 454C954 452 962 451 970 450C977 450 985 451 993 453C1000 454 1007 457 1012 461C1018 465 1022 470 1026 474C1029 479 1031 484 1033 488C1036 492 1038 496 1042 499C1046 503 1051 506 1055 510C1059 514 1064 519 1067 524Z"/><path d="M1127 523C1132 531 1136 542 1136 551C1136 561 1131 571 1125 580C1120 588 1111 596 1102 603C1094 610 1084 617 1073 622C1063 626 1051 631 1039 633C1027 635 1014 635 1002 634C991 633 979 629 969 626C958 623 949 618 939 615C930 612 920 609 911 606C901 602 890 598 882 593C874 587 867 580 862 572C858 565 857 555 856 547C856 539 858 531 858 523C859 514 859 507 859 499C859 490 857 481 859 472C861 462 863 452 869 443C874 435 883 426 893 420C903 414 916 410 928 407C940 404 953 402 966 402C978 402 992 403 1003 406C1015 409 1026 414 1035 420C1044 426 1050 435 1056 443C1061 451 1063 459 1068 466C1072 473 1075 478 1082 483C1088 489 1096 493 1104 500C1112 506 1122 514 1127 523Z"/><path d="M1186 520C1195 532 1201 548 1201 561C1201 575 1195 590 1187 602C1179 614 1166 625 1153 635C1141 645 1126 654 1111 660C1095 667 1078 672 1062 674C1045 677 1026 676 1010 673C994 671 978 664 964 659C950 654 938 649 925 644C912 640 899 637 886 633C872 628 857 624 845 617C833 610 821 600 814 590C808 580 806 567 804 555C803 543 806 532 807 520C807 509 808 498 808 486C808 474 806 461 808 448C811 435 814 420 823 409C831 397 844 386 858 377C872 369 890 364 907 360C924 356 943 354 960 354C977 354 995 355 1011 359C1027 364 1043 371 1055 380C1067 388 1076 401 1083 412C1090 422 1092 434 1098 444C1104 453 1108 460 1117 467C1126 475 1139 480 1151 489C1162 498 1178 508 1186 520Z"/><path d="M1245 518C1257 534 1266 554 1266 572C1267 590 1259 609 1248 625C1238 641 1220 656 1203 668C1186 680 1167 692 1146 699C1126 707 1103 714 1081 715C1059 717 1035 715 1015 710C994 706 975 696 957 690C940 683 926 675 910 670C894 664 878 662 860 657C842 653 821 649 805 641C789 633 772 621 762 608C752 595 749 578 747 563C744 548 748 533 749 518C750 503 750 489 751 474C752 458 749 441 753 424C757 408 762 389 774 374C785 359 802 345 821 335C839 325 863 319 884 314C906 310 929 308 951 308C973 308 996 309 1016 314C1037 319 1057 328 1072 340C1087 351 1098 367 1107 381C1116 395 1118 410 1125 422C1132 434 1138 442 1149 451C1161 460 1179 467 1195 478C1211 489 1233 502 1245 518Z"/><path d="M1304 516C1319 536 1332 561 1333 583C1334 606 1323 630 1310 650C1297 670 1275 688 1253 703C1231 718 1206 731 1180 740C1155 749 1126 756 1099 757C1071 758 1042 753 1017 746C992 739 970 726 949 717C929 708 914 698 894 692C875 686 856 685 834 681C812 676 784 674 763 665C742 657 719 643 705 628C692 613 686 592 683 573C679 555 684 535 685 516C686 498 687 480 689 461C690 441 688 420 694 400C699 380 707 357 722 339C737 322 759 306 782 295C806 283 834 277 861 272C887 267 915 264 941 264C968 264 995 265 1019 271C1043 277 1068 288 1086 301C1105 314 1118 335 1128 351C1139 368 1140 387 1149 401C1157 415 1164 425 1179 436C1194 447 1218 454 1239 467C1259 481 1288 497 1304 516Z"/><path d="M1365 516C1385 539 1400 570 1401 597C1403 624 1390 653 1374 677C1357 701 1330 722 1303 739C1277 757 1245 772 1214 782C1183 791 1148 798 1115 798C1082 798 1047 790 1018 780C989 771 964 754 941 742C918 731 902 719 880 713C858 707 836 707 809 704C783 700 748 700 721 691C693 682 663 668 646 650C628 633 619 607 614 585C609 563 615 539 616 516C617 493 620 472 623 449C625 425 625 400 633 376C641 353 652 326 671 306C689 287 717 269 745 257C773 245 807 238 838 233C869 228 900 225 931 225C962 225 993 225 1021 231C1050 238 1079 249 1100 264C1121 280 1137 303 1149 323C1161 342 1163 365 1173 381C1183 398 1192 409 1210 421C1228 434 1258 442 1283 458C1309 473 1345 493 1365 516Z"/><path d="M1430 517C1454 544 1472 581 1474 612C1475 644 1460 678 1440 706C1420 733 1387 758 1355 778C1323 797 1286 814 1249 824C1212 835 1170 841 1132 839C1094 837 1054 826 1021 814C988 801 961 779 935 765C910 752 894 738 869 732C844 725 819 729 787 727C755 724 713 728 679 719C645 711 607 695 584 675C561 655 548 626 541 599C535 573 541 544 543 517C545 490 550 464 554 437C559 410 560 381 572 354C583 327 598 297 622 276C645 254 679 236 712 223C745 211 783 205 819 200C854 195 889 192 923 191C957 190 993 189 1025 195C1057 201 1091 213 1115 229C1140 246 1158 273 1173 295C1187 317 1189 343 1201 362C1213 381 1222 393 1244 408C1266 422 1301 431 1332 449C1363 467 1407 490 1430 517Z"/></g>
+    </svg>
+    <div class="wrap story-grid">
+      <div class="story-copy reveal">
+        <p class="eyebrow eyebrow-light">Hikâyemiz</p>
+        <h2>Haritalardan<br><em>patilere.</em></h2>
+        <p>Simge bir harita mühendisi. Yıllarca beyaz yakalı bir hayatın içinde, ekran başında koordinatlarla, ölçülerle, çizgilerle çalıştı.</p>
+        <p>Sonra bir gün o rahat masayı bıraktı ve dikiş makinesinin başına oturdu. Dikişi ona <strong>abisi Engin</strong> öğretti. İlk ilmekten bugüne en büyük destekçisi de hep o oldu. İlk yatağı da, sonrakileri de Simge kendi elleriyle dikti.</p>
+        <p>Bugün PatiGang'in her ürünü onun atölyesinden çıkıyor. Ölçüyü hâlâ bir mühendis titizliğiyle alıyor. Ama artık çizdiği her çizgi, bir patinin yuvasına dönüşüyor.</p>
+        <p class="signature">Simge <span>PatiGang'in kurucusu</span></p>
+      </div>
+
+      <div class="story-side">
+        <figure class="polaroid reveal">
+          <div class="polaroid-img">
+            <!-- Simge'nin atölyeden gerçek bir fotoğrafı buraya: <img src="images/simge-atolye.jpg" alt="Simge atölyesinde dikiş makinesinin başında"> -->
+            <svg viewBox="0 0 240 200" role="img" aria-label="Dikiş makinesi çizimi">
+              <rect width="240" height="200" fill="#F7D488" opacity=".35"/>
+              <path d="M24 170h192" stroke="#33241C" stroke-width="3" stroke-linecap="round"/>
+              <path d="M44 150h112l8 14H36z" fill="#F6CFC2"/>
+              <path d="M48 157h104" stroke="#C8502F" stroke-width="2" stroke-dasharray="5 4" stroke-linecap="round"/>
+              <path d="M196 150V76a26 26 0 0 0-26-26H64a18 18 0 0 0-18 18v36h34V84h72v66z" fill="#FFF7EC" stroke="#33241C" stroke-width="3" stroke-linejoin="round"/>
+              <rect x="146" y="146" width="62" height="10" rx="4" fill="#33241C"/>
+              <path d="M63 104v24" stroke="#33241C" stroke-width="3" stroke-linecap="round"/>
+              <rect x="54" y="126" width="18" height="5" rx="2" fill="#33241C"/>
+              <circle cx="202" cy="92" r="14" fill="#9DBFA2" stroke="#33241C" stroke-width="3"/>
+              <circle cx="202" cy="92" r="3" fill="#33241C"/>
+              <rect x="118" y="30" width="16" height="20" rx="3" fill="#EE8466" stroke="#33241C" stroke-width="3"/>
+              <path d="M126 30c-10-14-44-12-56 10s-4 52-7 64" fill="none" stroke="#C8502F" stroke-width="2" stroke-dasharray="4 4"/>
+              <use href="#paw" x="168" y="100" width="18" height="18" fill="#C8502F" opacity=".7"/>
+            </svg>
+          </div>
+          <figcaption>atölyeden bir kare</figcaption>
+        </figure>
+
+        <ol class="timeline reveal">
+          <li><span class="tl-dot"></span><b>Harita mühendisliği</b>Koordinatlar, ölçüler, çizgiler.</li>
+          <li><span class="tl-dot"></span><b>Büyük karar</b>Beyaz yakalı hayata veda.</li>
+          <li><span class="tl-dot"></span><b>Engin abisinden ilk dersler</b>Makine, kumaş, sabır ve koşulsuz destek.</li>
+          <li><span class="tl-dot"></span><b>PatiGang doğuyor</b>İlk yataklar, ilk mutlu patiler.</li>
+          <li><span class="tl-dot"></span><b>Trendyol &amp; Hepsiburada</b>Türkiye'nin her yerine.</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- ATÖLYE / SÜREÇ -->
+  <section class="section" id="atolye">
+    <div class="wrap">
+      <header class="section-head reveal">
+        <p class="eyebrow">Nasıl dikiyoruz</p>
+        <h2>Bir yatağın yolculuğu.</h2>
+        <p>Fabrika bandı yok. Her ürün aynı ellerden, aynı özenle geçer.</p>
+      </header>
+      <ol class="steps">
+        <li class="step reveal">
+          <span class="step-ic"><svg class="ic" aria-hidden="true"><use href="#i-ruler"/></svg></span>
+          <span class="step-no">01</span>
+          <h3>Ölç</h3>
+          <p>Kalıp milimetrik çıkarılır. Mühendislikten kalma bir alışkanlık.</p>
+        </li>
+        <li class="step reveal">
+          <span class="step-ic"><svg class="ic" aria-hidden="true"><use href="#i-scissors"/></svg></span>
+          <span class="step-no">02</span>
+          <h3>Kes</h3>
+          <p>Kumaş seçilir, kalıba göre tek tek kesilir.</p>
+        </li>
+        <li class="step reveal">
+          <span class="step-ic"><svg class="ic" aria-hidden="true"><use href="#i-thread"/></svg></span>
+          <span class="step-no">03</span>
+          <h3>Dik</h3>
+          <p>Her dikiş Simge'nin makinesinden geçer, ilmek ilmek.</p>
+        </li>
+        <li class="step reveal">
+          <span class="step-ic"><svg class="ic" aria-hidden="true"><use href="#i-box"/></svg></span>
+          <span class="step-no">04</span>
+          <h3>Paketle</h3>
+          <p>Kontrol edilir, özenle paketlenir ve yeni evine yola çıkar.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- SATIN AL / KANALLAR -->
+  <section class="section section-tint" id="satin-al">
+    <div class="wrap">
+      <header class="section-head reveal">
+        <p class="eyebrow">Bizi nerede bulursun</p>
+        <h2>Bir tıkla yuvaya.</h2>
+        <p>Siparişlerin Trendyol ve Hepsiburada güvencesiyle gelir. Atölyeden yeni çıkanları ilk Instagram'da görürsün.</p>
+      </header>
+
+      <div class="channels">
+        <a class="channel reveal" data-link="trendyol">
+          <span class="channel-ic"><svg class="ic" aria-hidden="true"><use href="#i-bag"/></svg></span>
+          <span class="channel-name">Trendyol</span>
+          <span class="channel-desc">Tüm ürünler, renkler ve ölçüler. Alıcı yorumlarını da burada okuyabilirsin.</span>
+          <span class="channel-go">Mağazaya git <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></span>
+        </a>
+        <a class="channel reveal" data-link="hepsiburada">
+          <span class="channel-ic"><svg class="ic" aria-hidden="true"><use href="#i-bag"/></svg></span>
+          <span class="channel-name">Hepsiburada</span>
+          <span class="channel-desc">Hepsiburada'dan alışveriş yapmayı seviyorsan PatiGang orada da seni bekliyor.</span>
+          <span class="channel-go">Mağazaya git <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></span>
+        </a>
+        <a class="channel channel-insta reveal" data-link="instagram">
+          <span class="channel-ic"><svg class="ic" aria-hidden="true"><use href="#i-insta"/></svg></span>
+          <span class="channel-name">Instagram</span>
+          <span class="channel-desc">Atölye arkası, yeni kumaşlar, mutlu patiler. Soruların için DM her zaman açık.</span>
+          <span class="channel-go"><span data-text="instagramHandle">@patigang</span> <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></span>
+        </a>
+      </div>
+
+      <div class="gallery reveal" aria-label="Instagram'dan kareler">
+        <!-- Gerçek Instagram fotoğrafları gelince her kutuya: <img src="images/insta-1.jpg" alt="..."> -->
+        <a class="g-tile" data-link="instagram" style="--tint:#FBE1D8"><svg viewBox="0 0 240 180" aria-hidden="true"><use href="#ill-simit"/></svg><span>yeni dikildi</span></a>
+        <a class="g-tile" data-link="instagram" style="--tint:#E4EFE3"><svg viewBox="0 0 240 180" aria-hidden="true"><use href="#ill-minder"/></svg><span>pati onaylı</span></a>
+        <a class="g-tile" data-link="instagram" style="--tint:#FBEFD2"><svg viewBox="0 0 240 180" aria-hidden="true"><use href="#ill-battaniye"/></svg><span>yeni kumaşlar</span></a>
+        <a class="g-tile" data-link="instagram" style="--tint:#E2ECF4"><svg viewBox="0 0 240 180" aria-hidden="true"><use href="#ill-kenarli"/></svg><span>atölyeden</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SSS -->
+  <section class="section" id="sss">
+    <div class="wrap faq-grid">
+      <header class="section-head section-head-left reveal">
+        <p class="eyebrow">Sıkça sorulanlar</p>
+        <h2>Aklına takılan bir şey mi var?</h2>
+        <p>Burada yoksa Instagram'dan yaz, Simge cevaplasın.</p>
+        <a class="btn btn-ghost" data-link="instagram"><svg class="ic" aria-hidden="true"><use href="#i-chat"/></svg>Mesaj gönder</a>
+      </header>
+
+      <div class="faq reveal">
+        <details open>
+          <summary>Ürünleri nereden satın alabilirim?</summary>
+          <p>PatiGang ürünleri <a data-link="trendyol">Trendyol</a> ve <a data-link="hepsiburada">Hepsiburada</a> mağazalarımızda. Sipariş, ödeme ve kargo bu platformların güvencesiyle ilerler.</p>
+        </details>
+        <details>
+          <summary>Ürünler gerçekten el yapımı mı?</summary>
+          <p>Evet. Her ürün Simge'nin atölyesinde tek tek ölçülür, kesilir ve dikilir. Bu yüzden iki ürün arasında küçük, tatlı farklar olabilir.</p>
+        </details>
+        <details>
+          <summary>Hangi boyu seçmeliyim?</summary>
+          <p>Dostunu uyurken burun ucundan kuyruk dibine kadar ölç ve <a href="#olcu">ölçü rehberimizi</a> kullan. İki boy arasında kalırsan bir büyüğünü seç; kimse yatağından taşmak istemez.</p>
+        </details>
+        <details>
+          <summary>Farklı renk ya da ölçü yaptırabilir miyim?</summary>
+          <p>Aklındaki şeyi <a data-link="instagram">Instagram</a>'dan yaz. Atölyenin yoğunluğuna göre neler yapabileceğimizi birlikte konuşalım.</p>
+        </details>
+        <details>
+          <summary>Yatağı nasıl temizlerim?</summary>
+          <p>Her ürünün bakım talimatı ürün sayfasında ve etiketinde yazar. Talimata uyarsan yatak ilk günkü gibi uzun süre dayanır.</p>
+        </details>
+        <details>
+          <summary>Kargo ve iade nasıl işliyor?</summary>
+          <p>Siparişler Trendyol ve Hepsiburada üzerinden gönderilir. Kargo süresi ürün sayfasında görünür; iade ve değişim de platformun kurallarıyla, kolayca yapılır.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- SON ÇAĞRI -->
+  <section class="final">
+    <div class="wrap final-inner reveal">
+      <svg class="final-paws" viewBox="0 0 300 80" aria-hidden="true">
+        <use href="#paw" x="0" y="42" width="34" height="34" transform="rotate(90 17 59)"/>
+        <use href="#paw" x="52" y="6" width="34" height="34" transform="rotate(90 69 23)"/>
+        <use href="#paw" x="104" y="42" width="34" height="34" transform="rotate(90 121 59)"/>
+        <use href="#paw" x="156" y="6" width="34" height="34" transform="rotate(90 173 23)"/>
+        <use href="#paw" x="208" y="42" width="34" height="34" transform="rotate(90 225 59)"/>
+        <use href="#paw" x="260" y="6" width="34" height="34" transform="rotate(90 277 23)"/>
+      </svg>
+      <h2>Dostun bu gece <em>yeni yuvasında</em> uyusun mu?</h2>
+      <div class="cta-row cta-center">
+        <a class="btn btn-light" data-link="trendyol"><svg class="ic" aria-hidden="true"><use href="#i-bag"/></svg>Trendyol'da incele</a>
+        <a class="btn btn-outline-light" data-link="hepsiburada"><svg class="ic" aria-hidden="true"><use href="#i-bag"/></svg>Hepsiburada'da incele</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <a class="logo" href="#ust" aria-label="PatiGang başa dön">
+        <span class="logo-mark"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#paw"/></svg></span>
+        <span class="logo-word">Pati<b>Gang</b></span>
+      </a>
+      <p>El yapımı kedi ve köpek yatakları. Simge'nin atölyesinde, sevgiyle dikilir.</p>
+    </div>
+    <nav class="footer-links" aria-label="Alt menü">
+      <a href="#koleksiyon">Koleksiyon</a>
+      <a href="#olcu">Ölçü rehberi</a>
+      <a href="#hikaye">Hikâyemiz</a>
+      <a href="#sss">SSS</a>
+    </nav>
+    <div class="footer-social">
+      <a data-link="instagram" aria-label="Instagram"><svg class="ic" aria-hidden="true"><use href="#i-insta"/></svg></a>
+      <a data-link="email" aria-label="E-posta"><svg class="ic" aria-hidden="true"><use href="#i-mail"/></svg></a>
+      <a data-link="trendyol">Trendyol</a>
+      <a data-link="hepsiburada">Hepsiburada</a>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <p>© <span id="year">2026</span> PatiGang</p>
+    <p class="hand">ilmek ilmek, pati pati</p>
+  </div>
+</footer>
+
+<!-- Mobilde aşağıda sabit satın alma çubuğu -->
+<div class="buybar" id="buybar" aria-label="Hızlı satın al">
+  <a data-link="trendyol">Trendyol</a>
+  <a data-link="hepsiburada">Hepsiburada</a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
